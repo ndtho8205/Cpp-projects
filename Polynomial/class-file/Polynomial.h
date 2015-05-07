@@ -12,7 +12,7 @@ public:
 
     Polynomial();
     Polynomial(int deg);
-    Polynomial(int deg, double coef[]);
+    Polynomial(int deg, const double coef[]);
     Polynomial(int deg, double coef);
     ~Polynomial();
     Polynomial(const Polynomial& other);

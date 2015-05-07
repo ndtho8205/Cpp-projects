@@ -10,10 +10,10 @@ Polynomial::Polynomial(int deg) {
     for (int i = 0; i <= m_Deg; ++i)
         m_Coef[i] = 0;
 }
-Polynomial::Polynomial(int deg, double coef[]) {
+Polynomial::Polynomial(int deg, const double coef[]) {
     m_Deg  = deg;
     m_Coef = new double[m_Deg + 1];
-    for (int i = 0; i <= m_Deg; ++i)
+    for (int i = m_Deg; i >= 0; ++i)
         m_Coef[i] = coef[i];
 }
 Polynomial::Polynomial(int deg, double coef) {
@@ -162,14 +162,13 @@ std::ostream& operator<< (std::ostream &out, const Polynomial &other) {
 }
 
 double& Polynomial::operator[] (int index) {
-    return m_Coef[index];
+    //////
+    /// what happen when (index < 0) or (index > m_Deg) ???
+    //////
+        return m_Coef[index];
 }
 void Polynomial::set(int deg, const double coef[]) {
-    delete[] m_Coef;
-    m_Deg = deg;
-    m_Coef = new double[m_Deg + 1];
-    for (int i = 0; i <= m_Deg; ++i)
-        m_Coef[i] = coef[i];
+    *this = Polynomial(deg, coef);
 }
 
 double Polynomial::value(double x) {

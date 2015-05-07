@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1430813669 source:c:\users\black\google drive\myproject\c++\polynomial\main.cpp
+1430980465 source:c:\users\black\google drive\myproject\c++\polynomial\main.cpp
 	<iostream>
 	"Polynomial.h"
 
@@ -12,6 +12,6 @@
 1430813675 source:c:\users\black\google drive\myproject\c++\polynomial\polynomial.cpp
 	"Polynomial.h"
 
-1430813615 c:\users\black\google drive\myproject\c++\polynomial\polynomial.h
+1430980549 c:\users\black\google drive\myproject\c++\polynomial\polynomial.h
 	<iostream>
 

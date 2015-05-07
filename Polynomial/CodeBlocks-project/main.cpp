@@ -16,11 +16,15 @@ int main() {
 
     std::cout << std::endl << std::endl;
 
-    std::cout << "f1(x) + f2(x) = " << poly1 + poly2 << std::endl;
-    std::cout << "f1(x) - f2(x) = " << poly1 - poly2 << std::endl;
-    std::cout << "f1(x) * f2(x) = " << poly1 * poly2 << std::endl;
-    std::cout << "f1(x) / f2(x) = " << poly1 / poly2 << std::endl;
-    std::cout << "f1(x) % f2(x) = " << poly1 % poly2 << std::endl;
+    double a[] = {1,2,3,4};
+    poly1.set(3, a);
+    std::cout << poly1;
+
+//    std::cout << "f1(x) + f2(x) = " << poly1 + poly2 << std::endl;
+//    std::cout << "f1(x) - f2(x) = " << poly1 - poly2 << std::endl;
+//    std::cout << "f1(x) * f2(x) = " << poly1 * poly2 << std::endl;
+//    std::cout << "f1(x) / f2(x) = " << poly1 / poly2 << std::endl;
+//    std::cout << "f1(x) % f2(x) = " << poly1 % poly2 << std::endl;
 
     return 0;
 }
